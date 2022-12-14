@@ -1,0 +1,20 @@
+{
+  "name": "rajat9620/minitracker",
+  "license": [
+    "proprietary"
+  ],
+  "type": "magento2-module",
+  "description": "Magento 2 Backend module",
+  "version": "1.0.0",
+  "require": {
+        "php": ">=7.6"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "LoopDeveloper\\MiniTracker\\": ""
+    }
+  }
+}

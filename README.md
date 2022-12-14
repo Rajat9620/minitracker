@@ -1,13 +1,18 @@
-# minitracker
-Magento 2 backend module
+# Magento 2 Backend Module
+
+# Installation Instruction
+
+<b>Manual Installation</b>
+
+- Copy the content of the repo to the <b>app/code/LoopDeveloper/MiniTracker</b>
+- Run command: <b>php bin/magento setup:upgrade</b>
+- Run command: <b>php bin/magento setup:static-content:deploy</b>
+- Now flush cache: <b>php bin/magento cache:flush</b>
 
 
-Installation Steps:
+<b>Steps to check functionality</b>
 
-1) Please download this module package files and place it inside Magento_root_directory/app/code directory
-2) Then execute following commands to install module
-  php bin/magento setup:upgrade 
-  php bin/magento setup:di:compile
-  php bin/magnto setup:static-content:deploy -f
-
-Note: I have tested this module on Magento 2.4.4 version
+- Add any product to cart
+- It will get response from post request like tracking code & message and will add it database custom table
+- You can check entries in admin grid as well
+- Also you can check data records using REST API with url <b>Website_Url/rest/V1/tracking</b>

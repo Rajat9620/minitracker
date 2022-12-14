@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="LoopDeveloper_MiniTracker::listing" title="Mini Tracker" module="LoopDeveloper_MiniTracker" sortOrder="60" action="minitracker/index/index" resource="LoopDeveloper_MiniTracker::listing"/>
+    </menu>
+</config>

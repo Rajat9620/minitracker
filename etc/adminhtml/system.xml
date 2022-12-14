@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="minitracker" translate="label" sortOrder="300">           
+            <label><![CDATA[Mini tracker]]></label>
+        </tab>
+        <section id="minitracker" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Service Post Url</label>
+            <tab>minitracker</tab>
+            <resource>LoopDeveloper_MiniTracker::config_minitracker</resource>
+            <group id="tracker" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Enter Mini Tracker Post Url</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="service_url" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Mini Tracker Post Url</label>
+                    <comment>Please enter mini tracker service url to post data</comment>
+                </field>            
+            </group>
+        </section>
+    </system>
+</config>
