@@ -17,3 +17,6 @@
 - It will get response from post request like tracking code, message and will add it database custom table
 - You can check entries in admin grid as well
 - Also you can check data records using REST API with url <b>Website_Url/rest/V1/tracking</b>
+
+
+Note: While testing, I am some time getting error "Service unavailable" for post request. So please increase max_execution_time of the server to 60.
